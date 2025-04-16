@@ -1,0 +1,31 @@
+.#{$rt-namespace}__close-button {
+  color: #fff;
+  background: transparent;
+  outline: none;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  transition: 0.3s ease;
+  align-self: center;
+  min-width: 2.25rem;
+  min-height: 2.25rem;
+  margin-right: 1rem;
+  border-radius: 10px;
+
+  &--light {
+    color: #000;
+    opacity: 0.3;
+  }
+
+  & > svg {
+    fill: currentColor;
+    height: 14px;
+    width: 14px;
+  }
+
+  &:hover,
+  &:focus {
+    background-color: #fff;
+    color: #E2003B;
+  }
+}

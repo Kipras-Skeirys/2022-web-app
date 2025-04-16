@@ -1,0 +1,37 @@
+.#{$rt-namespace}__toast-container {
+  z-index: var(--toastify-z-index);
+  -webkit-transform: translate3d(0, 0, var(--toastify-z-index));
+  position: fixed;
+  padding: 4px 0.5rem;
+  width: var(--toastify-toast-width);
+  box-sizing: border-box;
+  color: #fff;
+  max-width: 25rem;
+  width: 100%;
+  &--top-left {
+    top: 1em;
+    left: 1em;
+  }
+  &--top-center {
+    top: 1em;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  &--top-right {
+    top: 1em;
+    right: 1em;
+  }
+  &--bottom-left {
+    bottom: 1em;
+    left: 1em;
+  }
+  &--bottom-center {
+    bottom: 1em;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  &--bottom-right {
+    bottom: 1em;
+    right: 1em;
+  }
+}

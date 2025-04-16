@@ -1,0 +1,66 @@
+.#{$rt-namespace}__toast {
+  position: relative;
+  min-height: var(--toastify-toast-min-height);
+  box-sizing: border-box;
+  margin-bottom: 1rem;
+  border-radius: 1rem;
+  box-shadow: 0 1px 10px 0 rgba(0, 0, 0, 0.1), 0 2px 15px 0 rgba(0, 0, 0, 0.05);
+  display: flex;
+  justify-content: space-between;
+  max-height: var(--toastify-toast-max-height);
+  overflow: hidden;
+  font-family: var(--toastify-font-family);
+  cursor: default;
+  direction: ltr;
+  /* webkit only issue #791 */
+  z-index: 0;
+  &--rtl {
+    direction: rtl;
+  }
+  &--close-on-click {
+    cursor: pointer;
+  }
+  &-body {
+    margin: auto 0;
+    flex: 1 1 auto;
+    display: flex;
+    align-items: center;
+    & > div:last-child {
+      word-break: break-word;
+      flex: 1;
+    }
+  }
+  &-icon {
+    margin: 0 1rem;
+    width: 36px;
+    flex-shrink: 0;
+    display: flex;
+  }
+}
+
+.#{$rt-namespace}--animate {
+  animation-fill-mode: both;
+  animation-duration: 0.5s;
+}
+
+.#{$rt-namespace}--animate-icon {
+  animation-fill-mode: both;
+  animation-duration: 0.3s;
+}
+
+.ToastMessage-cont {
+  display: flex;
+  flex-direction: column;
+  margin: 0.5rem 0;
+}
+
+.ToastMessage-title {
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.ToastMessage-description {
+  font-size: 0.75rem;
+  font-weight: 500;
+  opacity: 0.75;
+}

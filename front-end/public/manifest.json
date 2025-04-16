@@ -1,0 +1,15 @@
+{
+  "short_name": "2022-web-app",
+  "name": "Video chat web app",
+  "icons": [
+    {
+      "src": "2022-web-app-icon.svg",
+      "type": "image/svg+xml",
+      "sizes": "any"
+    }
+  ],
+  "start_url": ".",
+  "display": "standalone",
+  "theme_color": "#0E141B",
+  "background_color": "#0E141B"
+}
